@@ -25,10 +25,10 @@ public class OrderControlller {
 		return orderService.post(orderEntity);
 	}
 	
-	@GetMapping("/getAll")
-	public List<OrderEntity> getAllOrder(@RequestParam (value="userId") long userId){
-		return  orderService.getAllOrder(userId);
-	}
+//	@GetMapping("/getAll")
+//	public List<OrderEntity> getAllOrder(@RequestParam (value="userId") long userId){
+//		return  orderService.getAllOrder(userId);
+//	}
 	@GetMapping("/posts")
 	public List<OrderEntity> getAllData(){
 		

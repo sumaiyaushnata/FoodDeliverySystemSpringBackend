@@ -26,12 +26,12 @@ public class OrderService {
 		return orderRepository.save(orderEntity);
 	}
 	
-	public List<OrderEntity> getAllOrder(long userId) {
-		
-		
-		return orderRepository.getAllOrder(userId);
-		
-	}
+//	public List<OrderEntity> getAllOrder(long userId) {
+//
+//
+//		return orderRepository.getAllOrder(userId);
+//
+//	}
 	public List<OrderEntity> getAllData() {
 		
 		

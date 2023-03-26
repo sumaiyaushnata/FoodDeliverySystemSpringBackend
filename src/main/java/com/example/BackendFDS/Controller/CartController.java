@@ -36,10 +36,10 @@ public class CartController {
 //	public List<CartEntity> getById(@RequestParam (value="userId")  Long id) {
 //		return cartService.getById(id);
 //	}
-	@GetMapping("/posts")
-	public List<CartEntity> getById(@RequestParam (value="userId") long id){
-		return cartService.getById(id);
-	}
+//	@GetMapping("/posts")
+//	public List<CartEntity> getById(@RequestParam (value="userId") long id){
+//		return cartService.getById(id);
+//	}
 	@GetMapping("/getAll")
 	public List<CartEntity> getAllCard(@RequestParam (value="userId") long userId){
 		return  cartService.getAllCard(userId);
@@ -74,6 +74,13 @@ public class CartController {
 //	public CartEntity getById(@PathVariable Long id) {
 //		return cartService.getById(id);
 //	}
+
+
+	@GetMapping("/posts")
+	public List<CartEntity> getAllData(){
+
+		return cartService.getAllData();
+	}
 
 	
 

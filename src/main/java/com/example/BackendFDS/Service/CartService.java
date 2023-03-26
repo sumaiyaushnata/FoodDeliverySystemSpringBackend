@@ -3,6 +3,7 @@ package com.example.BackendFDS.Service;
 import java.util.List;
 import java.util.Optional;
 
+import com.example.BackendFDS.Entity.FoodEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -36,6 +37,14 @@ public List<CartEntity> getAllCard(long userId) {
 	return cartRepository.getAllCard(userId);
 	
 }
+
+
+	public List<CartEntity> getAllData() {
+
+
+		return cartRepository.findAll();
+
+	}
 
 
 
